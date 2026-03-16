@@ -215,9 +215,11 @@ The dataframe and Arrow examples show both directions of integration:
 These examples are about interoperability and workflow clarity rather than minimal startup time. For very small datasets, Python import overhead from libraries such as pandas, Polars, PyArrow, or matplotlib can dominate total runtime.
 
 
-## Related repositories
+## Related links
 
 * [Velr](https://velr.ai/)
+* [Velr Python Documentation](https://velr.ai/docs/python-driver/)
+* [Velr on PyPI](https://pypi.org/project/velr/)
 * [velr-rust-examples](https://github.com/velr-ai/velr-rust-examples)
 
 ## License

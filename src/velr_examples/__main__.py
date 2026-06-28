@@ -7,6 +7,7 @@ import sys
 EXAMPLES = [
     "basic_open",
     "basic_query",
+    "query_parameters",
     "file_backed",
     "streaming_tables",
     "transaction",
@@ -46,6 +47,8 @@ EXAMPLES = [
     "table_to_pyarrow",
     "csv_with_pandas_people",
     "csv_with_polars_ticket_dependencies",
+    "fulltext_search",
+    "vector_embeddings_fastembed",
 
 ]
 

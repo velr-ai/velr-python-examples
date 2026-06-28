@@ -12,6 +12,7 @@ Examples in this repository cover:
 
 - opening in-memory and file-backed databases
 - creating and querying graph data
+- binding openCypher query parameters
 - reading result tables row by row
 - converting typed values to normal Python objects
 - streaming multiple result tables
@@ -24,6 +25,8 @@ Examples in this repository cover:
 - binding pandas, Polars, and PyArrow data into Velr with `UNWIND BIND(...)`
 - reading CSV data with pandas or Polars and turning it into graph data
 - plotting graph-derived data with pandas or Polars and matplotlib
+- creating full-text indexes and querying them with Neo4j-compatible `CALL` syntax
+- registering a vector embedder and querying vector indexes with FastEmbed
 
 ## Getting started
 
@@ -48,6 +51,7 @@ pip install -e '.[arrow]'
 pip install -e '.[pandas]'
 pip install -e '.[polars]'
 pip install -e '.[plotting]'
+pip install -e '.[embeddings]'
 ```
 
 Plotting examples also require the dataframe stack they use:
@@ -62,6 +66,8 @@ To install everything used by the examples:
 ```bash
 pip install -e '.[all]'
 ```
+
+The FastEmbed vector example downloads a small embedding model on first run.
 
 This repository targets the Python versions supported by Velr:
 
@@ -100,6 +106,7 @@ Examples mirror the structure of the Rust examples repository where that makes s
 
 * `basic_open.py`
 * `basic_query.py`
+* `query_parameters.py`
 * `file_backed.py`
 * `streaming_tables.py`
 * `transaction.py`
@@ -165,6 +172,11 @@ Examples mirror the structure of the Rust examples repository where that makes s
 
 * `plotting_from_pandas_movies.py`
 * `plotting_from_polars_tickets.py`
+
+### Search examples
+
+* `fulltext_search.py`
+* `vector_embeddings_fastembed.py`
 
 ## Minimal example
 

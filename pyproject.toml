@@ -9,7 +9,7 @@ description = "Examples showing how to use the Velr Python driver"
 readme = "README.md"
 requires-python = ">=3.12,<3.14"
 dependencies = [
-  "velr",
+  "velr>=0.2.29,<0.3",
 ]
 
 [project.optional-dependencies]
@@ -27,11 +27,15 @@ polars = [
 plotting = [
   "matplotlib>=3.8",
 ]
+embeddings = [
+  "fastembed>=0.8",
+]
 all = [
   "pyarrow>=15",
   "pandas>=2",
   "polars>=0.20",
   "matplotlib>=3.8",
+  "fastembed>=0.8",
 ]
 
 [project.urls]
